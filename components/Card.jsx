@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 
-import { BsDownload } from "react-icons/bs";
+import { BsDatabaseFill, BsDatabaseFillAdd, BsDatabaseFillCheck, BsDisplayport, BsDownload } from "react-icons/bs";
 import React from "react";
 
 const Card = () => {
@@ -8,25 +8,25 @@ const Card = () => {
     <div className="flex flex-col px-20 sm:px-5">
       <div className="mb-5">
         <h2 className="text-3xl font-bold">
-          Llevando ideas a la realidad con código
+          Bienvenid@ a mi portafolio
         </h2>
       </div>
       <div>
         <p className="text-lg">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-          numquam doloribus voluptates pariatur in dolore beatae id labore quis
-          ipsum optio excepturi aperiam consectetur, ut laborum, corporis,
-          veritatis quaerat sed.
+          Aquí podrás encontrar los proyectos que he realizado durante mi período como estudiante de 
+          Desarrollo Web Fullstack.
         </p>
       </div>
       <div className="mt-5">
         <Button
-          color="primary"
+          color="default"
+          variant="ghost"
           className="py-7 px-5 text-base"
           radius="lg"
-          endContent={<BsDownload fontSize={20} />}
+          endContent={<BsDatabaseFillCheck fontSize={20} />}
+          href="/projects"
         >
-          Curriculum
+          Ver proyectos
         </Button>
       </div>
     </div>
